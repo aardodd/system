@@ -8,4 +8,8 @@
     ../../users/andreea
     ../../users/guest
   ];
+
+  nixpkgs.config.allowUnfree = true;
+
+  system.stateVersion = "22.05";
 }

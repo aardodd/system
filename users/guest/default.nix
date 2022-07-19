@@ -9,9 +9,9 @@
   };
 
   home-manager.users.guest = {
-    programs = {
-
-    };
+    home.packages = with pkgs; [
+      xfce4
+    ];
 
     xsession = {
       enable = true;

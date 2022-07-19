@@ -6,6 +6,7 @@
     home = "/home/aaron";
     shell = pkgs.zsh;
     initialPassword = "deadbread";
+    extraGroups = [ "wheel" ];
   };
 
   home-manager.users.aaron = {
@@ -18,6 +19,10 @@
         ".config".source = ../../dotfiles;
         ".config".recursive = true;
       };
+
+      packages = with pkgs; [
+        herbstluftwm
+      ];
     };
 
     xsession = {
