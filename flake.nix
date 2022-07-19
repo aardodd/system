@@ -34,6 +34,10 @@
     ...
   }:
   let
+    inherit (nixpkgs) lib;
+    inherit (lib) nixosSystem;
+    inherit (lib.attrsets) genAttrs;
+
     system = "x86_64-linux";
 
     hosts = [
@@ -57,6 +61,6 @@
       };
   in
   {
-    nixosConfigurations = genAttrs hosts toConfig;
-  }
+    nixosConfigurations = genAttrs hosts mkComputer;
+  };
 }
