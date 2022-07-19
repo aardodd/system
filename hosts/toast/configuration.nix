@@ -7,6 +7,4 @@
     ../../users/andreea
     ../../users/guest
   ];
-
-  networking.hostname = "toast";
 }
