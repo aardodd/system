@@ -11,7 +11,9 @@
 
   home-manager.users.andreea = {
     home.packages = with pkgs; [
-      plasma5
+      plasma-desktop
+      plasma-workspace
+      plasma-workspace-wallpapers
     ];
 
     xsession = {
