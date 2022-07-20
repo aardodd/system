@@ -11,6 +11,10 @@
   };
 
   home-manager.users.aaron = {
+    imports = [
+      ../../profiles/users/shell/zsh.nix
+    ];
+
     home = rec {
       stateVersion = "22.05";
       username = "aaron";
@@ -21,9 +25,6 @@
         ".config".recursive = true;
       };
 
-      imports = [
-        ../../profiles/users/shell/zsh.nix
-      ];
 
       packages = with pkgs; [
       ];
