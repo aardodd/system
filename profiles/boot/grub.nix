@@ -16,9 +16,5 @@
         footer = true;
       };
     };
-
-    plymouth = {
-      enable = true;
-    };
   };
 }
