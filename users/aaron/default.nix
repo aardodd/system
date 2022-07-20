@@ -12,6 +12,7 @@
 
   home-manager.users.aaron = {
     imports = [
+      ../../profiles/users/programs/shells/starship.nix
       ../../profiles/users/programs/shells/zsh.nix
     ];
 

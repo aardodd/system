@@ -12,6 +12,7 @@
 
   home-manager.users.andreea = {
     imports = [
+      ../../profiles/users/programs/shells/starship.nix
       ../../profiles/users/programs/shells/zsh.nix
     ];
 
