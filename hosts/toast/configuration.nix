@@ -5,4 +5,5 @@
     (import ../../suites/desktop.nix { inherit config; device = "/dev/sda"; })
     ../../suites/users/all.nix
   ];
+  hardware.opengl.enable = true;
 }
