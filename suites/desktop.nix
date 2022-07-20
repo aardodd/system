@@ -1,6 +1,7 @@
-{ device, ... }: {
+{ config, device, ... }: {
   imports = [
-    (import ../profiles/boot/grub.nix { inherit device; })
+    ./base.nix
+    (import ../profiles/boot/grub.nix { inherit config device; })
     ../profiles/display/x.nix
     ../profiles/programs/shells/zsh.nix
   ];

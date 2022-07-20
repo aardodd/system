@@ -30,6 +30,8 @@
     flake-utils,
     flake-utils-plus,
     home-manager,
+    grub2-themes,
+    grub2-themes-png,
     sops-nix,
     ...
   }:
@@ -49,6 +51,7 @@
         inherit system;
         modules = [
           ./hosts/${hostName}/configuration.nix
+          inputs.grub2-themes.nixosModule
           inputs.home-manager.nixosModules.home-manager
           {
             home-manager = {
