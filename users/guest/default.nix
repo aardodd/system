@@ -11,7 +11,7 @@
 
   home-manager.users.guest = {
     imports = [
-      ../../profiles/users/shell/zsh.nix
+      ../../profiles/users/programs/shells/zsh.nix
     ];
 
     home.packages = with pkgs; [
