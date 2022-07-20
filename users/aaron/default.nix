@@ -21,13 +21,7 @@
       };
 
       packages = with pkgs; [
-        herbstluftwm
       ];
-    };
-
-    xsession = {
-      enable = true;
-      windowManager.command = "exec herbstluftwm";
     };
   };
 }

@@ -11,14 +11,6 @@
 
   home-manager.users.andreea = {
     home.packages = with pkgs; [
-      plasma-desktop
-      plasma-workspace
-      plasma-workspace-wallpapers
     ];
-
-    xsession = {
-      enable = true;
-      windowManager.command = "startplasma-x11";
-    };
   };
 }
