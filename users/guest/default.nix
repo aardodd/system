@@ -10,6 +10,10 @@
   };
 
   home-manager.users.guest = {
+    imports = [
+      ../../profiles/users/shell/zsh.nix
+    ];
+
     home.packages = with pkgs; [
     ];
   };

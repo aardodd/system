@@ -11,6 +11,10 @@
   };
 
   home-manager.users.andreea = {
+    imports = [
+      ../../profiles/users/shell/zsh.nix
+    ];
+
     home.packages = with pkgs; [
     ];
   };

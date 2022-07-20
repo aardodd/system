@@ -21,6 +21,10 @@
         ".config".recursive = true;
       };
 
+      imports = [
+        ../../profiles/users/shell/zsh.nix
+      ];
+
       packages = with pkgs; [
       ];
     };
