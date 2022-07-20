@@ -4,6 +4,7 @@
     ./hardware-configuration.nix
     (import ../../profiles/boot/grub.nix { device = "/dev/sda"; })
     ../../profiles/display/x.nix
+    ../../profiles/programs/shells/zsh.nix
     ../../users/aaron
     ../../users/andreea
     ../../users/guest

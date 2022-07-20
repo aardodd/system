@@ -5,6 +5,7 @@
     isNormalUser = true;
     home = "/home/aaron";
     shell = pkgs.zsh;
+    useDefaultShell = false;
     initialPassword = "deadbread";
     extraGroups = [ "wheel" ];
   };

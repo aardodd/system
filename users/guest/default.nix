@@ -5,6 +5,7 @@
     isNormalUser = true;
     home = "/home/guest";
     shell = pkgs.zsh;
+    useDefaultShell = false;
     initialPassword = "guest";
   };
 
