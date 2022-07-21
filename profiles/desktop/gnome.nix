@@ -9,12 +9,12 @@
       desktopManager.gnome.enable = true;
     };
   };
-  programs.sway.enable = true;
   programs.xwayland.enable = true;
 
   environment.systemPackages = with pkgs; [
     gnome.gnome-terminal
     gnomeExtensions.bing-wallpaper-changer
+    gnomeExtensions.blur-my-shell
   ];
 
   programs.kdeconnect = {

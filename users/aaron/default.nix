@@ -12,7 +12,7 @@
 
   home-manager.users.aaron = {
     imports = [
-      ../../profiles/users/programs/foot.nix
+      ../../profiles/users/programs/gui.nix
       ../../profiles/users/programs/shells/zsh.nix
     ];
 
