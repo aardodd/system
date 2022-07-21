@@ -12,11 +12,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    grub2-themes.url = github:vinceliuice/grub2-themes;
-    grub2-themes.inputs.nixpkgs.follows = "nixpkgs";
-    grub2-themes-png.url = github:AnotherGroupChat/grub2-themes-png;
-    grub2-themes-png.inputs.nixpkgs.follows = "nixpkgs";
-
     sops-nix.url = "github:Mic92/sops-nix";
   };
 
@@ -26,12 +21,7 @@
     nixpkgs-unstable,
     nixos-hardware,
     nixos-wsl,
-    darwin,
-    flake-utils,
-    flake-utils-plus,
     home-manager,
-    grub2-themes,
-    grub2-themes-png,
     sops-nix,
     ...
   }:
@@ -51,7 +41,6 @@
         inherit system;
         modules = [
           ./hosts/${hostName}/configuration.nix
-          inputs.grub2-themes.nixosModule
           inputs.home-manager.nixosModules.home-manager
           {
             home-manager = {
