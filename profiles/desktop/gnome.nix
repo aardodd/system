@@ -13,6 +13,7 @@
 
   environment.systemPackages = with pkgs; [
     gnome.gnome-terminal
+    gnome3.gnome-tweaks
     gnomeExtensions.bing-wallpaper-changer
     gnomeExtensions.blur-my-shell
   ];
