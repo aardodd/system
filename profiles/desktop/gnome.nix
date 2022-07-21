@@ -13,6 +13,7 @@
 
   environment.systemPackages = with pkgs; [
     gnome.gnome-terminal
+    gnomeExtensions.bing-wallpaper-changer
   ];
 
   programs.kdeconnect = {
