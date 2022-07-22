@@ -7,7 +7,7 @@
     shell = pkgs.zsh;
     useDefaultShell = false;
     initialPassword = "deadbread";
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "doas" ];
   };
 
   home-manager.users.andreea = {
