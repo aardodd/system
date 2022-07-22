@@ -33,6 +33,7 @@
     system = "x86_64-linux";
 
     hosts = [
+      "iso"
       "toast"
     ];
 
@@ -53,6 +54,9 @@
       };
   in
   {
+    packages.${system}.iso =
+      self.nixosConfigurations.iso.config.system.build.isoImage;
+
     nixosConfigurations = genAttrs hosts mkComputer;
   };
 }
