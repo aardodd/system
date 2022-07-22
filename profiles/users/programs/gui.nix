@@ -26,5 +26,9 @@
     # image editor
     inkscape
     gimp
+
+    # browsers
+    chromium
+    firefox
   ];
 }
