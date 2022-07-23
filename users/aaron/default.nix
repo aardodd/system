@@ -28,6 +28,10 @@
 
 
       packages = with pkgs; [
+        emacs
+        fd
+        neovim
+        ripgrep
       ];
     };
   };

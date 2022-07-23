@@ -27,6 +27,9 @@
     inkscape
     gimp
 
+    # 3D modelling
+    blender
+
     # browsers
     chromium
     firefox
