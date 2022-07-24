@@ -1,10 +1,10 @@
-{ device, ... }: {
+{ devices, ... }: {
   boot = {
     loader = {
       grub = {
         enable = true;
         version = 2;
-        inherit device;
+        inherit devices;
         memtest86.enable = true;
       };
     };
