@@ -17,6 +17,9 @@
     signal-desktop
     teams
 
+    # gaming
+    steam
+
     # video
     vlc
 
@@ -29,6 +32,9 @@
 
     # 3D modelling
     blender
+
+    # video editing
+    davinci-resolve
 
     # browsers
     chromium
