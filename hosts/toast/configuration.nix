@@ -2,7 +2,7 @@
   imports = [
     "${modulesPath}/installer/scan/not-detected.nix"
     ./hardware-configuration.nix
-    (import ../../suites/plasma-desktop.nix {
+    (import ../../suites/xmonad-desktop.nix {
       inherit config;
       device = "/dev/sda";
     })

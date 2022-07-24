@@ -13,7 +13,6 @@
   home-manager.users.aaron = {
     imports = [
       ../../profiles/users/programs/gui.nix
-      ../../profiles/users/programs/shells/zsh.nix
     ];
 
     home = rec {
@@ -21,17 +20,12 @@
       username = "aaron";
       homeDirectory = "/home/aaron";
 
-      file = {
-        ".config".source = ../../dotfiles;
-        ".config".recursive = true;
-      };
-
-
       packages = with pkgs; [
         emacs
         fd
         neovim
         ripgrep
+        stow
       ];
     };
   };
