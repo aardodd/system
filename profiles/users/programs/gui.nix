@@ -34,6 +34,7 @@
     blender
 
     # video editing
+    obs-studio
     davinci-resolve
 
     # browsers
