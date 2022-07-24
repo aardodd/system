@@ -8,5 +8,5 @@
     ../profiles/programs/shells/zsh.nix
   ];
 
-  services.xserver.windowManager.xmonad.enable = true;
+  networking.networkmanager.enable = true;
 }

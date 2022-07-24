@@ -2,8 +2,27 @@
   services = {
     xserver = {
       enable = true;
-      displayManager.startx.enable = true;
-      desktopManager.xterm.enable = false;
+
+      displayManager = {
+        defaultSession = "xfce+xmonad";
+        lightdm.enable = true;
+      };
+
+      desktopManager = {
+        xterm.enable = false;
+
+        xfce = {
+          enable = true;
+          noDesktop = true;
+          enableXfwm = false;
+
+          thunarPlugins = [
+            pkgs.xfce.thunar-archive-plugin
+          ];
+        };
+      };
+
+      windowManager.xmonad.enable = true;
     };
   };
 
