@@ -1,5 +1,9 @@
 { pkgs, ... }: {
   services = {
+    picom = {
+      enable = true;
+    };
+
     xserver = {
       enable = true;
 
@@ -22,7 +26,16 @@
         };
       };
 
-      windowManager.xmonad.enable = true;
+      windowManager.xmonad = {
+        enable = true;
+        enableContribAndExtras = true;
+
+        extraPackages = haskellPackages: [
+          haskellPackages.xmonad-contrib
+        ];
+
+        enableConfiguredRecompile = true;
+      };
     };
   };
 

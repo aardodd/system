@@ -23,6 +23,7 @@
       packages = with pkgs; [
         emacs
         fd
+        feh
         neovim
         ripgrep
         stow
