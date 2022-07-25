@@ -33,6 +33,7 @@
         feh
         neovim
         ripgrep
+        stow
       ];
     };
   };
