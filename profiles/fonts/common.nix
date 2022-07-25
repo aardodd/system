@@ -5,8 +5,6 @@
     fontconfig.cache32Bit = true;
 
     fonts = with pkgs; [
-      terminus_font
-      source-code-pro
       (nerdfonts.override {
         fonts = [
           "Hack"
