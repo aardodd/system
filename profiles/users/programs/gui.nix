@@ -2,7 +2,6 @@
   home.packages = with pkgs; [
     # office
     libreoffice-fresh
-    okular
     simple-scan
 
     # learning
