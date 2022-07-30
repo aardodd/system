@@ -18,6 +18,7 @@
     teams
 
     # gaming
+    lutris
     steam
 
     # video
