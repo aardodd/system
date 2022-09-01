@@ -20,7 +20,8 @@
     lutris
     steam
 
-    # video
+    # media
+    clementine
     vlc
 
     # screenshot / screen capture
